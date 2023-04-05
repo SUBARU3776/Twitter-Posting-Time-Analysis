@@ -4,7 +4,7 @@ import calendar
 import pytz
 
 # Read data and convert created_at to date/time type
-df = pd.read_csv('D:\Python\Postman\Hidetoshi_H_.csv')
+df = pd.read_csv('*:\hoge\hogehoge.csv')
 df['created_at'] = pd.to_datetime(df['created_at'], utc=True).dt.tz_convert('Asia/Tokyo')
 
 # Separate posting date and time
