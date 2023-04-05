@@ -1,5 +1,5 @@
 # Twitter-Posting-Time-Analysis
-#### このスクリプトは、Twitterのツイート投稿データを読み込み、最近30日間の投稿の時間帯と日付に基づいて散布図を作成するものです。
+### このスクリプトは、Twitterのツイート投稿データを読み込み、最近30日間の投稿の時間帯と日付に基づいて散布図を作成するものです。
 
 ##### 具体的には、以下のような処理を行っています。
 
@@ -19,4 +19,29 @@
 
 これによって、30日間でどの時間帯にどのくらいのツイートが投稿されているかがプロットの大きさの違いで可視化されます。
 
+
+***********************************************************************************************************************************************************************
+
+
+### This script reads Twitter tweet post data and creates a scatterplot based on the time and date of the posts over the last 30 days.
+##### Specifically, the following process is used
+
+- Import pandas library and also import matplotlib.pyplot, calendar, pytz
+- Import Twitter tweet posting data in csv format
+- Convert posting date and time to Japan time
+- Separate posting date from posting time
+- Extract data within 30 days
+- Set the drawing area of the graph
+- Set the day of the week and date on the y-axis
+- Turn Sunday labels red
+- Plot scatter plots based on posting time and date
+- Set x- and y-axis ranges and labels
+- Add grid lines
+- Set a title for the graph
+- Draw the chart<br>
+
+This will visualize how many tweets are posted at any given time over a 30-day period, based on the different sizes of the plots.
+<br>
+<br>
+<br>
 ![2023-03-30_14h25_06](https://user-images.githubusercontent.com/71259928/229946640-0761f0d8-daf3-4b6a-9ca7-8192d19895d3.png)
