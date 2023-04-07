@@ -3,22 +3,28 @@
 
 ##### 具体的には、以下のような処理を行っています。
 
-- pandasライブラリをインポートし、matplotlib.pyplot、calendar、pytzもインポートする
-- Twitterのツイート投稿データをcsv形式で読み込む
-- 投稿日時を日本時間に変換する
-- 投稿日と投稿時間を分離する
-- 30日以内のデータを抽出する
-- グラフの描画領域を設定する
-- y軸に曜日と日付を設定する
-- 日曜日のラベルを赤色にする
-- 投稿時間と日付に基づいて散布図をプロットする
-- x軸、y軸の範囲とラベルを設定する
-- グリッド線を追加する
-- グラフのタイトルを設定する
-- 描画する<br>
+- データの中から最新の日時を取得する。
+- 投稿日と投稿時間を分離する。
+- 30日以内のツイートを抽出する。
+- 投稿元（source）ごとの投稿数をカウントする。
+- 投稿数の降順でソートする。
+- 投稿元ごとの割合を計算する。
+- 結果を表示する。
+- sourceに応じてランダムな色を割り当てる。
+- グラフの描画領域を設定する。
+- y軸に曜日と日付を設定する。
+- source毎にラベルと色を設定する。
+- 凡例を追加する。
+- x軸のラベルと範囲を設定する。
+- x軸のグリッド線を追加する。
+- y軸の範囲を設定する。
+- y軸のグリッド線を追加する。
+- グラフのタイトルを設定する。
+- グラフを表示する。<br>
 
-これによって、30日間でどの時間帯にどのくらいのツイートが投稿されているかがプロットの大きさの違いで可視化されます。
-
+これによって、30日間でどの時間帯にどのくらいのツイートが投稿されているかがプロットの大きさの違いで可視化されます。<br>
+sourceごとの投稿数を円グラフなどの形で可視化するために使用できるデータを生成することができます。<br>
+また、時間と日付にわたるツイートの投稿パターンを視覚化するために使用することもできます。
 
 ***********************************************************************************************************************************************************************
 
@@ -26,22 +32,27 @@
 ### This script reads Twitter tweet post data and creates a scatterplot based on the time and date of the posts over the last 30 days.
 ##### Specifically, the following process is used
 
-- Import pandas library and also import matplotlib.pyplot, calendar, pytz
-- Import Twitter tweet posting data in csv format
-- Convert posting date and time to Japan time
-- Separate posting date from posting time
-- Extract data within 30 days
-- Set the drawing area of the graph
-- Set the day of the week and date on the y-axis
-- Turn Sunday labels red
-- Plot scatter plots based on posting time and date
-- Set x- and y-axis ranges and labels
-- Add grid lines
+- Get the latest date and time from the data.
+- Separate the posting date from the posting time.
+- Extract tweets within 30 days.
+- Count the number of posts by source.
+- Sort in descending order of the number of posts.
+- Calculate the percentage of each source.
+- Display the results.
+- Assign a random color according to the source.
+- Set the drawing area for the graph.
+- Set the day of the week and date on the y-axis.
+- Set labels and colors for each source.
+- Add a legend.
+- Set labels and ranges for the x-axis.
+- Add grid lines for x-axis.
+- Set the range of y-axis.
+- Add a grid line for y-axis
 - Set a title for the graph
-- Draw the chart<br>
+- Displaying a graph<br>
 
-This will visualize how many tweets are posted at any given time over a 30-day period, based on the different sizes of the plots.
-<br>
-<br>
-<br>
+This allows visualization of how many tweets are posted at any given time over a 30-day period by the size of the plots.<br>
+It can generate data that can be used to visualize the number of posts per SOURCE in the form of a pie chart or similar.<br>
+It can also be used to visualize the pattern of tweets posted over time and date.<br>
+
 ![2023-03-30_14h25_06](https://user-images.githubusercontent.com/71259928/229946640-0761f0d8-daf3-4b6a-9ca7-8192d19895d3.png)
