@@ -33,4 +33,4 @@ This will visualize how many tweets are posted at any given time over a 30-day p
 Generate data that can be used to visualize the number of posts per "source" in the form of a pie chart or similar.
 <br>
 
-![2023-03-30_14h25_06](https://user-images.githubusercontent.com/71259928/229946640-0761f0d8-daf3-4b6a-9ca7-8192d19895d3.png)
+![2023-04-08_09h24_48](https://user-images.githubusercontent.com/71259928/230695212-798dc533-bb47-4f50-8e07-3c9d140e69a9.png)
