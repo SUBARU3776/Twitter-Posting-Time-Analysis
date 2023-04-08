@@ -4,7 +4,7 @@ import calendar
 import random
 
 # Read data and convert Date Created to date/time type
-df = pd.read_csv('D:\Python\snscrape\snscrape_2022meimei3_tweets_2023-04-02 17.24.46.csv')
+df = pd.read_csv('D:\.csv')
 df['Date Created'] = pd.to_datetime(df['Date Created'])
 
 # Get the latest date of the data
@@ -60,7 +60,7 @@ for i in sun_indices:
 # Set labels and colors for each "source"
 for source, color in color_map.items():
     data = counts[counts['source'] == source]
-    ax.scatter(data['hour'], data['date'], s=data['count']*50, alpha=0.5, c=color, label=source) # マーカーの大きさを決定
+    ax.scatter(data['hour'], data['date'], s=data['count']*50, alpha=0.5, c=color, label=source) # Determine the size of the marker
 
 # Add a legend
 handles, labels = ax.get_legend_handles_labels()
