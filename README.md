@@ -14,6 +14,7 @@
 
 これによって、30日間でどの時間帯にどのくらいのツイートが投稿されているかがプロットの大きさの違いで可視化されます。<br>
 sourceごとの投稿数を円グラフなどの形で可視化するために使用できるデータを生成することができます。<br>
+- ##### v2.0で"color_map"の定義を削除し、counts dfのsource列をループしてランダムな色を割り当てるようにしました。これにより、未知の"source値"にも対応が可能となります。
 
 ***********************************************************************************************************************************************************************
 
@@ -31,6 +32,6 @@ sourceごとの投稿数を円グラフなどの形で可視化するために�
 <br>
 This will visualize how many tweets are posted at any given time over a 30-day period by the size of the plots.<br>
 Generate data that can be used to visualize the number of posts per "source" in the form of a pie chart or similar.
-<br>
+![2023-04-15_13h57_56](https://user-images.githubusercontent.com/71259928/232188418-2653b38d-a3bc-4312-8726-5eee0f64cf0f.png)
 
-![2023-04-08_09h24_48](https://user-images.githubusercontent.com/71259928/230695212-798dc533-bb47-4f50-8e07-3c9d140e69a9.png)
+- ##### In v2.0, the "color_map" definition was removed and a random color is assigned by looping through the source column of the counts df. This allows for unknown "source values" to be handled.
