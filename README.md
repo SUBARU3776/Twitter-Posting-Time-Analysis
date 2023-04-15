@@ -34,5 +34,4 @@ sourceごとの投稿数を円グラフなどの形で可視化するために�
 This will visualize how many tweets are posted at any given time over a 30-day period by the size of the plots.<br>
 Generate data that can be used to visualize the number of posts per "source" in the form of a pie chart or similar.<br>
 ・In v2.0, the "color_map" definition was removed and a random color is assigned by looping through the source column of the counts df. 
-・![2023-04-15_13h57_56](https://user-images.githubusercontent.com/71259928/232189725-68c34430-7ede-4a3b-becd-031beeaa6a2e.png)
-This allows for unknown "source values" to be handled.
+・This allows for unknown "source values" to be handled.
