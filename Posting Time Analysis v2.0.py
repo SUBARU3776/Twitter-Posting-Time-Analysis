@@ -4,7 +4,7 @@ import calendar
 import random
 
 # データを読み込み、Date Createdを日時型に変換する
-df = pd.read_csv('D:\Python\snscrape\snscrape_sksk0873k777_tweets_2023-04-15 14.24.57.csv')
+df = pd.read_csv('D:hogehoge.csv')
 df['Date Created'] = pd.to_datetime(df['Date Created'])
 
 # データの最新日を取得する
