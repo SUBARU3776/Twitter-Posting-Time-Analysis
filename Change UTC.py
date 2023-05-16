@@ -8,7 +8,7 @@ df = pd.read_csv(r'hoge:\hogehoge.csv')
 df['created_at'] = pd.to_datetime(df['created_at'])
 
 # 日本時間から現地時間に変換する
-df['created_at'] = df['created_at'] - timedelta(hours=2)  # 日本時間から時間を引く
+df['created_at'] = df['created_at'] - timedelta(hours=**)  # 日本時間から時差分を引く
 df['created_at'] = df['created_at'].dt.tz_localize('Asia/Tokyo')  # 日本時間をタイムゾーンとして設定
 df['created_at'] = df['created_at'].dt.tz_convert('hogehoge/hoge')  # 任意の現地時間に変換（例：Europe/Berlin）
 
@@ -22,5 +22,5 @@ print(df['created_at'])
 file_name = pd.Timestamp.now().strftime("%Y%m%d%H%M%S") + "_converted.csv"
 
 # データをCSVファイルとして保存する
-df.to_csv(file_name, index=False)
-print("変換後のデータをCSVファイルとして保存しました。ファイル名: " + file_name) # ファイル名は適当に指定してください
+df.to_csv(file_name, index=False) # ファイル名は適当に指定してください
+print("変換後のデータをCSVファイルとして保存しました。ファイル名: " + file_name) 
